@@ -1,0 +1,29 @@
+.Input {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  margin-top: 85px;
+  background-color: white;
+  height: 45px;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  width: 99.7%;
+  padding: 1px;
+}
+
+.Input img {
+  height: 29px;
+  padding-top: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  outline: none;
+}
+
+.Input input {
+  position: absolute;
+  font-size: 35px;
+  outline: none;
+  border: none;
+  width: 96.5%;
+}
