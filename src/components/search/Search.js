@@ -15,17 +15,14 @@ function Search() {
 
   return (
     <div className="Input">
-      <div>
-        <img src={Loupe} alt="" />
-      </div>
-      <div>
-        <input
-          type="search"
-          onChange={changeFunction}
-          value={inputValue}
-          placeholder="Search!"
-        ></input>
-      </div>
+      <img src={Loupe} alt="" />
+      <input
+        className="Search"
+        type="search"
+        onChange={changeFunction}
+        value={inputValue}
+        placeholder="Search!"
+      ></input>
     </div>
   );
 }

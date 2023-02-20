@@ -89,22 +89,25 @@ function Contacts() {
                       addCheck(x.id);
                     }}
                   >
-                    <div className="initials">
-                      <div className="initials-text">
-                        {x.first_name.charAt(0) + x.last_name.charAt(0)}
+                    <div className="contact">
+                      <div className="initials">
+                        <div className="initials-text">
+                          {x.first_name.charAt(0) + x.last_name.charAt(0)}
+                        </div>
+                      </div>
+                      <div className="contact-info">
+                        <div className="name">
+                          {x.first_name + "" + x.last_name}
+                        </div>
+                        <div className="email">{x.email}</div>
                       </div>
                     </div>
-                    <div className="name">
-                      {x.first_name + "" + x.last_name}
-                    </div>
-                    <div className="email">{x.email}</div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        checked={checkCheck(x.id)}
-                        readOnly
-                      />
-                    </div>
+                    <input
+                      className="check"
+                      type="checkbox"
+                      checked={checkCheck(x.id)}
+                      readOnly
+                    />
                   </div>
                 );
               } else {
@@ -116,20 +119,23 @@ function Contacts() {
                         addCheck(x.id);
                       }}
                     >
-                      <div className="initials">
-                        <img alt="" src={x.avatar} />
+                      <div className="contact">
+                        <div className="initials">
+                          <img className="initials-img" alt="" src={x.avatar} />
+                        </div>
+                        <div className="contact-info">
+                          <div className="name">
+                            {x.first_name + " " + x.last_name}
+                          </div>
+                          <div className="email">{x.email}</div>
+                        </div>
                       </div>
-                      <div className="name">
-                        {x.first_name + " " + x.last_name}
-                      </div>
-                      <div className="email">{x.email}</div>
-                      <div>
-                        <input
-                          type="checkbox"
-                          checked={checkCheck(x.id)}
-                          readOnly
-                        />
-                      </div>
+                      <input
+                        className="check"
+                        type="checkbox"
+                        checked={checkCheck(x.id)}
+                        readOnly
+                      />
                     </div>
                   </>
                 );

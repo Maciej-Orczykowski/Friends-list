@@ -1,36 +1,33 @@
 .App {
   color: white;
   text-align: center;
-  background: cover;
-  background-color: #282c34;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-self: start;
+  justify-content: flex-start;
+  background-color: #7f8492;
 }
 
-.Heading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  font-size: 54px;
-  font-weight: bold;
-  background-color: slategray;
-  width: 100%;
-  padding-bottom: 12px;
-  -webkit-text-stroke: 1.5px black;
-  border-radius: 5px;
+/* Mobile styles */
+@media screen and (min-width: 320px) {
+  .Heading {
+    font-size: 240%;
+    font-weight: bold;
+    width: 100%;
+    -webkit-text-stroke: 1.5px black;
+    border-radius: 5px;
+    margin-top: 1%;
+  }
 }
 
-.Link-div {
-  width: 100%;
-  background-color: #282c34;
-  text-align: center;
-}
-
-.App-link {
-  color: #61dafb;
-  position: absolute;
-  bottom: 0;
+/* Tablet styles */
+@media screen and (min-width: 760px) {
+  .Heading {
+    font-size: 340%;
+    font-weight: bold;
+    width: 100%;
+    -webkit-text-stroke: 1.5px black;
+    border-radius: 5px;
+    margin-top: 1%;
+  }
 }

@@ -1,51 +1,201 @@
-.contactList {
-  display: flex;
-  flex-direction: column;
-  height: 86%;
-  width: 99.9%;
-  overflow: auto;
-  position: absolute;
-  left: 0;
-  top: 135px;
+/* Mobile styles */
+@media screen and (min-width: 320px) {
+  .contactList {
+    display: flex;
+    flex-direction: column;
+    width: 99.9%;
+    overflow: auto;
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #708090;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #282c34;
+  }
+
+  .contact {
+    display: flex;
+    width: 100%;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 110%;
+  }
+
+  .name {
+    font-weight: bold;
+    align-items: flex-start;
+    text-align: start;
+    margin-top: 7%;
+  }
+
+  .email {
+    font-weight: bold;
+    text-align: start;
+  }
+
+  .initials {
+    background: #708090;
+    border-radius: 50%;
+    height: 58px;
+    width: 50px;
+    border: 2px solid #2e343a;
+    padding: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .initials-img {
+    height: 50px;
+  }
+
+  .initials-text {
+    margin-top: 10px;
+    font-size: 160%;
+  }
+
+  .check {
+    margin-right: 2%;
+  }
 }
 
-.contacts {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #708090;
-  padding-top: 12px;
-  padding-bottom: 15px;
-  padding-left: 45px;
-  padding-right: 25px;
-  background: cover;
-  background-color: #282c34;
+/* Tablet styles */
+@media screen and (min-width: 760px) {
+  .contactList {
+    display: flex;
+    flex-direction: column;
+    width: 99.9%;
+    overflow: auto;
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #708090;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #282c34;
+  }
+
+  .contact {
+    display: flex;
+    width: 100%;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 140%;
+    width: 82%;
+  }
+
+  .name {
+    font-weight: bold;
+    align-items: flex-start;
+    text-align: start;
+    margin-top: 3%;
+  }
+
+  .email {
+    font-weight: bold;
+    text-align: start;
+    margin-top: 3%;
+  }
+
+  .initials {
+    background: #708090;
+    border-radius: 50%;
+    height: 58px;
+    width: 50px;
+    border: 2px solid #2e343a;
+    padding: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .initials-img {
+    height: 50px;
+  }
+
+  .initials-text {
+    margin-top: 10px;
+    font-size: 160%;
+  }
+
+  .check {
+    margin-right: 2%;
+  }
 }
 
-.name {
-  font-weight: bold;
-  min-width: 500px;
+/* Desktop styles */
+@media screen and (min-width: 1000px) {
+  .contactList {
+    display: flex;
+    flex-direction: column;
+    width: 99.9%;
+    overflow: auto;
+  }
 
-  align-items: flex-start;
-  text-align: start;
-}
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #708090;
+    background-color: #282c34;
+  }
 
-.email {
-  font-weight: bold;
-  min-width: 500px;
-  text-align: start;
-}
+  .contact {
+    display: flex;
+    width: 100%;
+  }
 
-.initials {
-  background: #708090;
-  border-radius: 50%;
-  border: 2px solid #2e343a;
-  height: 65px;
-  width: 65px;
-  align-items: center;
-  justify-content: center;
-}
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 180%;
+    width: 82%;
+  }
 
-.initials-text {
-  height: 65px;
-  margin-top: 10px;
+  .name {
+    font-weight: bold;
+    align-items: flex-start;
+    text-align: start;
+    margin-top: 1.5%;
+  }
+
+  .email {
+    font-weight: bold;
+    text-align: start;
+    margin-top: 1.5%;
+  }
+
+  .initials {
+    background: #708090;
+    border-radius: 50%;
+    height: 58px;
+    width: 50px;
+    border: 2px solid #2e343a;
+    padding: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .initials-img {
+    height: 50px;
+  }
+
+  .initials-text {
+    margin-top: 10px;
+    font-size: 160%;
+  }
+
+  .check {
+    margin-right: 2%;
+  }
 }
