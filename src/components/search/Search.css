@@ -40,6 +40,7 @@
     font-size: 210%;
     outline: none;
     border: none;
+    width: 93%;
   }
 }
 
@@ -55,12 +56,13 @@
   .Input img {
     height: 28px;
     outline: none;
-    margin-top: 0.7%;
+    margin-top: 0.3%;
   }
 
   .Search {
     font-size: 210%;
     outline: none;
     border: none;
+    width: 96%;
   }
 }
